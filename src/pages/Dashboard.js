@@ -9,7 +9,7 @@ function Dashboard() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/api/quizzes")
+    axios.get("https://quiz-backend-3-m6i9.onrender.com/api/quizzes")
       .then(res => setQuizzes(res.data))
       .catch(err => console.error("Error fetching quizzes:", err));
   }, []);
