@@ -1,0 +1,37 @@
+.join-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.join-title {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.join-input {
+  padding: 15px;
+  width: 300px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.join-btn {
+  padding: 12px 30px;
+  border: none;
+  background: #ffcc00;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.join-btn:hover {
+  background: #ffd633;
+}

@@ -1,0 +1,80 @@
+.leaderboard-container {
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  padding: 50px;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 50px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.podium-item {
+  width: 180px;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  animation: riseUp 1s ease forwards;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+  transition: transform 0.3s ease;
+}
+
+.podium-item:hover {
+  transform: scale(1.05);
+}
+
+.first {
+  background: linear-gradient(135deg, gold, orange);
+  height: 260px;
+}
+
+.second {
+  background: linear-gradient(135deg, silver, gray);
+  height: 200px;
+}
+
+.third {
+  background: linear-gradient(135deg, #cd7f32, brown);
+  height: 160px;
+}
+
+.podium-item h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.podium-item p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.podium-item span {
+  font-size: 16px;
+}
+
+@keyframes riseUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
